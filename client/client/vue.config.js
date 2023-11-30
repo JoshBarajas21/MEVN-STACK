@@ -4,8 +4,8 @@ module.exports = defineConfig({
   configureWebpack: {
     devServer: {
       proxy: {
-        '/api/Todolist': {
-          target: 'https://opulent-rotary-phone-pjwq77jqvrjc6wqj-3000.app.github.dev/',
+        '/api': {
+          target: 'http://localhost:3000',
         },
       },
     },
